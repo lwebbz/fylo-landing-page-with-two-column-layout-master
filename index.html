@@ -10,34 +10,58 @@
       sizes="32x32"
       href=".assets/images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
-  <body>
-    <nav>
-      <img src="assets/images/logo.svg" alt="fylo logo" />
-      <ul>
+  <body class="flex flex-col font-[OpenSans] text-base">
+    <nav class="flex justify-between pt-5 pb-20 font-[Raleway] text-xs">
+      <img
+        src="assets/images/logo.svg"
+        alt="fylo logo"
+        class="h-auto w-[95px] pl-6"
+      />
+      <ul class="flex gap-5 pr-6">
         <li>Features</li>
         <li>Team</li>
         <li>Sign In</li>
       </ul>
     </nav>
-    <section>
+    <section
+      class="box-border flex flex-col p-8 text-center place-items-center"
+    >
       <img
         src="assets/images/illustration-1.svg"
         alt="users accessing documents from file"
+        class="h-auto w-[80%] max-w-sm pb-5"
       />
-      <div>
-        <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p>
+      <div class="flex flex-col place-items-center">
+        <h1 class="pb-5 text-2xl font-bold">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="pb-5 text-sm">
           Fylo stores your most important files in one secure location. Access
           them wherever you need, share and collaborate with friends, family,
           and co-workers.
         </p>
-        <div>
-          <input type="Enter your email..." />
-          <button>Get Started</button>
-        </div>
+        <form
+          action="/submit-email"
+          class="flex flex-col pb-16 place-items-center"
+        >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email..."
+            required
+            class="p-1 pl-5 mb-3 border w-70 rounded-xs placeholder:text-xs placeholder:text-[var(--light-gray)]"
+          />
+          <button
+            type="submit"
+            class="bg-[var(--bright-blue)] text-white w-70 rounded-xs p-2.5 font-[Raleway] font-bold text-xs"
+          >
+            Get Started
+          </button>
+        </form>
       </div>
     </section>
     <section>
@@ -51,8 +75,10 @@
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required!
         </p>
-        <!-- add arrow image to a tag text -->
-        <a href="">See how Fylo works</a>
+        <a href=""
+          >See how Fylo works
+          <img src="assets/images/icon-arrow.svg" alt="arrow emoji" />
+        </a>
         <div>
           <p>"</p>
           <p>
