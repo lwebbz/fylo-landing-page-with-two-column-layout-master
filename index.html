@@ -27,7 +27,7 @@
       </ul>
     </nav>
     <section
-      class="box-border flex flex-col p-8 text-center place-items-center"
+      class="box-border flex flex-col p-8 text-center place-items-center pb-14"
     >
       <img
         src="assets/images/illustration-1.svg"
@@ -64,36 +64,63 @@
         </form>
       </div>
     </section>
-    <section>
-      <img src="assets/images/illustration-2.svg" alt="users collaborating" />
-      <div>
-        <h2>Stay productive, wherever you are</h2>
-        <p>
+    <section
+      class="flex flex-col place-items-center bg-[var(--light-grayish-blue)]"
+    >
+      <!-- Replace with standalone img outside of section -->
+      <div
+        class="pb-10 w-full h-32 bg-[url(assets/images/bg-curve-mobile.svg)] relative -top-16 bg-cover bg-no-repeat bg-center"
+      ></div>
+      <img
+        src="assets/images/illustration-2.svg"
+        alt="users collaborating"
+        class="h-auto w-[80%] pb-20"
+      />
+      <div class="box-border flex flex-col p-5 place-items-center">
+        <h2 class="pb-7 font-[Raleway] font-bold">
+          Stay productive, wherever you are
+        </h2>
+        <p class="pb-8 text-sm">
           Never let location be an issue when accessing your files. Fylo has you
           covered for all of your file storage needs.
+          <br />
           <br />
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required!
         </p>
-        <a href=""
-          >See how Fylo works
-          <img src="assets/images/icon-arrow.svg" alt="arrow emoji" />
+        <a
+          href=""
+          class="pb-1 mb-10 text-xs text-green-700 border-b-solid border-b-green-700 border-b-1"
+        >
+          See how Fylo works
+          <img
+            src="assets/images/icon-arrow.svg"
+            alt="arrow emoji"
+            class="inline"
+          />
         </a>
-        <div>
-          <p>"</p>
-          <p>
+        <div
+          class="w-[90%] bg-white flex flex-col place-items-center box-border p-6 rounded-sm shadow-2xs mb-16"
+        >
+          <img
+            src="assets/images/icon-quotes.svg"
+            alt="quote icon"
+            class="self-start pb-3"
+          />
+          <p class="pb-3 text-xs leading-6">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </p>
-          <div>
+          <div class="flex items-center self-start">
             <img
               src="assets/images/avatar-testimonial.jpg"
               alt="ceo headshot"
+              class="w-8 h-8 mr-2 rounded-full"
             />
             <div>
-              <p>Kyle Burton</p>
-              <p>Founder & CEO, Huddle</p>
+              <p class="text-xs font-bold">Kyle Burton</p>
+              <p class="text-[10px]">Founder & CEO, Huddle</p>
             </div>
           </div>
         </div>
