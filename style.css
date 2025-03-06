@@ -551,8 +551,17 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
+  }
   .w-70 {
     width: calc(var(--spacing) * 70);
+  }
+  .w-\[60\%\] {
+    width: 60%;
   }
   .w-\[80\%\] {
     width: 80%;
