@@ -68,7 +68,6 @@
     <section
       class="flex flex-col place-items-center bg-[var(--light-grayish-blue)]"
     >
-      <!-- Replace with standalone img outside of section -->
       <img
         src="assets/images/illustration-2.svg"
         alt="users collaborating"
@@ -124,19 +123,36 @@
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <h3>Get early access today</h3>
-        <p>
+    <section
+      class="box-border flex flex-col pl-10 pr-10 place-items-center bg-[var(--desaturated-blue)]"
+    >
+      <div class="flex flex-col pt-12 pb-6 text-white place-items-center">
+        <h3 class="font-[Raleway] font-bold pb-3">Get early access today</h3>
+        <p class="text-sm text-center">
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
       </div>
-      <div>
-        <input type="email@example.com" />
-        <button>Get Started For Free</button>
-      </div>
+      <form
+        action="/submit-email"
+        class="flex flex-col pb-16 place-items-center"
+      >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@example.com"
+          required
+          class="p-1 pl-2 mb-3 w-70 rounded-xs shadow-lg placeholder:text-xs placeholder:text-[var(--light-gray)] bg-white"
+        />
+        <button
+          type="submit"
+          class="bg-[var(--bright-blue)] text-white w-70 rounded-xs p-2.5 font-[Raleway] shadow-md font-bold text-xs"
+        >
+          Get Started For Free
+        </button>
+      </form>
     </section>
     <footer>
       <div>
